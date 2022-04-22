@@ -1,0 +1,17 @@
+.tabela {
+  border: 1px solid gray;
+}
+.tabela th, .tabela td{
+  border: 1px solid gray;
+  padding: 0;
+}
+
+.outter-wrapper{
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.red-border{
+  border: red 1px solid;
+}

@@ -1,0 +1,21 @@
+<div [style]="transformExpression1" class="toggle-wrapper black-border">
+  <div id="toggle" (click)="toggleHandle()" class="pill gray-border">
+    <div class="ball"
+          [ngClass]="{
+            'ball-left': !isTogglado,
+            'ball-right': isTogglado
+             }">
+    </div>
+    <div  class="texto-wrap"
+          [ngClass]="{
+            'pill-word-nao':!isTogglado,
+            'pill-word-sim':isTogglado
+          }">
+      <span [style]="transformExpression2" [ngClass]="{
+        'mw-fade-out':!fadeToggle,
+        'mw-fade-in':fadeToggle
+      }" class="texto">{{toggleWord}}</span>
+    </div>
+  </div>
+</div>
+
